@@ -33,11 +33,10 @@
 %%
 %% mooring(<mooring number>) = mooringClass('<Mooring name>');             - To initialize mooringClass (only needed when mooring blocks are used)
 %%
-%%
 
 %% Start WEC-Sim log
 bdclose('all'); clc; diary off; close all;
-clear body waves simu output pto constraint ptoSim mooring
+clear body waves simu output pto ptoSim constraint mooring
 delete('*.log');
 diary('simulation.log')
 
